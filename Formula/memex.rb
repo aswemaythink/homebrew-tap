@@ -1,25 +1,25 @@
 class Memex < Formula
   desc "A CLI that indexes a repo's authored intent layer so agents read intent before code."
   homepage "https://aswemaythink.github.io/memex"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.0/agent-memex-aarch64-apple-darwin.tar.xz"
-      sha256 "345dbf360aea86081e00e5b2fe7c88315ebd9976f48c2b2f59c4c4ae4b93de7c"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-aarch64-apple-darwin.tar.xz"
+      sha256 "463bd37a8b8764e4abd55f86d4b00a1a6e63a67f0588e62c8ca33cdb9c978753"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.0/agent-memex-x86_64-apple-darwin.tar.xz"
-      sha256 "77fc235f4212bc1e5d731f926ec99221bcb8762e7e7c8b7559b0d0c88d389e94"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-x86_64-apple-darwin.tar.xz"
+      sha256 "c60de66b749e20a7e0e262db4c9022e722bacc8d8e2c66501a2717b6d32bb62b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.0/agent-memex-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "251a8c82738e5c2c7372120c3dcbbeded14ddc5db382c0d0d83c0a3d035c9ad5"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "dce77e82d173e7f8c75895ad8ebec4eab4be7c7034780f7c4e89e645c049ff21"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.0/agent-memex-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "787724d83d37b31efb1b16f0c395fc3ef08857620f9e72cf7e42fed1f532f557"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c6da349ef78f6ce8b6cdb72454b8354e7e700ed60444c556c728d0dbef7a280d"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
