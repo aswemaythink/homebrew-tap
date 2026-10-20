@@ -1,28 +1,28 @@
 class Memex < Formula
   desc "A CLI that indexes a repo's authored intent layer so agents read intent before code."
   homepage "https://aswemaythink.github.io/memex"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-aarch64-apple-darwin.tar.xz"
-      sha256 "463bd37a8b8764e4abd55f86d4b00a1a6e63a67f0588e62c8ca33cdb9c978753"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-aarch64-apple-darwin.tar.xz"
+      sha256 "1d712b8c116b443eed9f491eb0387c31c0025037624f1c8a1552b9ead4b7a235"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-x86_64-apple-darwin.tar.xz"
-      sha256 "c60de66b749e20a7e0e262db4c9022e722bacc8d8e2c66501a2717b6d32bb62b"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-x86_64-apple-darwin.tar.xz"
+      sha256 "16e35a4e812e1582c4bd2c8c10218bc9f965af4e61a8093e09f03b3e8583f729"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "dce77e82d173e7f8c75895ad8ebec4eab4be7c7034780f7c4e89e645c049ff21"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "e5cdb0722949ebb392f68cb7e6767ae627b321d444229a0e99b6cf43750ab80b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.1.1/agent-memex-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "c6da349ef78f6ce8b6cdb72454b8354e7e700ed60444c556c728d0dbef7a280d"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "98789a1e848e5d9397aaa3d1adfcf6e77eab0fd0927e310f36bce6850268eb9b"
     end
   end
-  license any_of: ["MIT", "Apache-2.0"]
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":               {},
