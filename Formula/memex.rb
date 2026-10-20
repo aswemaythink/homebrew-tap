@@ -1,25 +1,25 @@
 class Memex < Formula
   desc "A CLI that indexes a repo's authored intent layer so agents read intent before code."
   homepage "https://aswemaythink.github.io/memex"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-aarch64-apple-darwin.tar.xz"
-      sha256 "1d712b8c116b443eed9f491eb0387c31c0025037624f1c8a1552b9ead4b7a235"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.1/agent-memex-aarch64-apple-darwin.tar.xz"
+      sha256 "0173f20131a17d19d6ed094577e922ade90931babb7a1e6f4277bcdb5845a7c5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-x86_64-apple-darwin.tar.xz"
-      sha256 "16e35a4e812e1582c4bd2c8c10218bc9f965af4e61a8093e09f03b3e8583f729"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.1/agent-memex-x86_64-apple-darwin.tar.xz"
+      sha256 "e7efd67b6d41a5c67b194eb042108efad29b629163848c211c70fa4e764003fa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "e5cdb0722949ebb392f68cb7e6767ae627b321d444229a0e99b6cf43750ab80b"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.1/agent-memex-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "465a3284f4bb121cf08211b6c42eda463ef6577871726c29ca9d899cbaf4fe33"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aswemaythink/memex/releases/download/v0.2.0/agent-memex-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "98789a1e848e5d9397aaa3d1adfcf6e77eab0fd0927e310f36bce6850268eb9b"
+      url "https://github.com/aswemaythink/memex/releases/download/v0.2.1/agent-memex-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "848f41207616c627894711e6995836231acf359f583f71fdf1c8a6c33d8a34dc"
     end
   end
   license "MIT"
